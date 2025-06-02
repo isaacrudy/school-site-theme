@@ -1,13 +1,33 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
 	"settings": {
 		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "#67053a",
+					"name": "Maroon",
+					"slug": "custom-maroon"
+				},
+				{
+					"color": "#003c72",
+					"name": "Dark Blue",
+					"slug": "custom-dark-blue"
+				}
+			]
+		},
 		"layout": {
 			"contentSize": "620px",
 			"wideSize": "1000px"
 		},
 		"spacing": {
-			"units": [ "%", "px", "em", "rem", "vh", "vw" ]
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
 		},
 		"typography": {
 			"fontFamilies": [
@@ -20,6 +40,30 @@
 		},
 		"useRootPaddingAwareAlignments": true
 	},
+	"styles": {
+		"blocks": {
+			"core/separator": {
+				"css": "width: 5rem;"
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--white)",
+			"text": "var(--wp--preset--color--black)"
+		},
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--custom-maroon)",
+					"text": "var(--wp--preset--color--white)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--black)"
+				}
+			}
+		}
+	},
 	"templateParts": [
 		{
 			"area": "header",
@@ -30,5 +74,6 @@
 			"name": "footer"
 		}
 	],
-	"version": 3
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
 }
