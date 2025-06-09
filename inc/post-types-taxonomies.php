@@ -118,11 +118,11 @@ function school_theme_register_taxonomies() {
         'rewrite'           => array( 'slug' => 'staff-categories' ),
 
         // https://wordpress.stackexchange.com/questions/155629/custom-taxonomies-capabilities
-        // 'capabilities'      => array(
-        //     'manage_terms'  => '',
-        //     'edit_terms'    => '',
-        //     'delete_terms'  => '',
-        // )
+        'capabilities'      => array(
+            'manage_terms'  => '',
+            'edit_terms'    => '',
+            'delete_terms'  => '',
+        )
     );
     register_taxonomy( 'fwd-staff-category', array( 'fwd-staff' ), $args );
 }
