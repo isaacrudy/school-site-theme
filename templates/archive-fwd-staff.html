@@ -1,34 +1,44 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
 <!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
-<main class="wp-block-group"><!-- wp:heading -->
-<h2 class="wp-block-heading">Staff</h2>
+<main class="wp-block-group"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Staff</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:query {"queryId":6,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"lock":{"move":true,"remove":true},"layout":{"contentSize":null,"type":"constrained"}} -->
-<div class="wp-block-query"><!-- wp:post-template {"lock":{"move":true,"remove":true},"layout":{"type":"default"}} -->
-<!-- wp:group {"templateLock":"all","lock":{"move":true,"remove":true}} -->
+<!-- wp:query {"queryId":6,"query":{"perPage":10,"pages":0,"offset":0,"postType":"fwd-staff","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"lock":{"move":false,"remove":false},"layout":{"contentSize":null,"type":"constrained"}} -->
+<div class="wp-block-query"><!-- wp:heading -->
+<h2 class="wp-block-heading">Faculty</h2>
+<!-- /wp:heading -->
+
+<!-- wp:post-template {"lock":{"move":false,"remove":false},"layout":{"type":"default"}} -->
+<!-- wp:group {"lock":{"move":false,"remove":false}} -->
 <div class="wp-block-group"><!-- wp:post-title /-->
 
 <!-- wp:post-featured-image {"isLink":true} /-->
 
 <!-- wp:post-content /--></div>
 <!-- /wp:group -->
-<!-- /wp:post-template -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query -->
 
-<!-- wp:group {"templateLock":"all","lock":{"move":true,"remove":true},"layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:query-pagination -->
-<!-- wp:query-pagination-previous /-->
+<!-- wp:query {"queryId":6,"query":{"perPage":10,"pages":0,"offset":0,"postType":"fwd-staff","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"lock":{"move":false,"remove":false},"layout":{"contentSize":null,"type":"constrained"}} -->
+<div class="wp-block-query"><!-- wp:heading -->
+<h2 class="wp-block-heading">Administrative</h2>
+<!-- /wp:heading -->
 
-<!-- wp:query-pagination-numbers /-->
+<!-- wp:post-template {"lock":{"move":false,"remove":false},"layout":{"type":"default"}} -->
+<!-- wp:group {"lock":{"move":false,"remove":false}} -->
+<div class="wp-block-group"><!-- wp:post-title /-->
 
-<!-- wp:query-pagination-next /-->
-<!-- /wp:query-pagination --></div>
-<!-- /wp:group --></div>
+<!-- wp:post-featured-image {"isLink":true} /-->
+
+<!-- wp:post-content /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
 <!-- /wp:query --></main>
 <!-- /wp:group -->
 

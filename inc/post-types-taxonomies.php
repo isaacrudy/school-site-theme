@@ -61,7 +61,6 @@ function school_theme_register_CPTs() {
 }
 add_action( 'init', 'school_theme_register_CPTs' );
 
-// https://developer.wordpress.org/reference/hooks/enter_title_here/
 if( is_admin() ) {
 	add_filter( 'enter_title_here', function( $input ) {
 		if( 'fwd-staff' === get_post_type() ) {
