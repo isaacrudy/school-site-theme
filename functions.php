@@ -40,15 +40,30 @@ function register_student_post_type() {
     'public' => true,
     'has_archive' => true,
     'rewrite' => ['slug' => 'students'],
-    'show_in_rest' => true, 
+    'show_in_rest' => true,
     'supports' => ['title', 'editor', 'excerpt', 'thumbnail'],
     'menu_icon' => 'dashicons-welcome-learn-more',
-    'taxonomies' => ['cohort'], 
+    'taxonomies' => ['cohort'],
+    'template' => [
+      ['core/image'],
+      ['core/paragraph', ['placeholder' => 'Write a description...']],
+    ],
+
+    'template_lock' => 'all',
   ];
 
   register_post_type('student', $args);
 }
 add_action('init', 'register_student_post_type');
+
+function custom_student_title_placeholder($title) {
+  $screen = get_current_screen();
+  if ($screen->post_type === 'student') {
+    $title = 'Add student name';
+  }
+  return $title;
+}
+add_filter('enter_title_here', 'custom_student_title_placeholder');
 
 function register_student_role_taxonomy() {
     $labels = [
@@ -79,9 +94,10 @@ function register_student_role_taxonomy() {
 }
 add_action('init', 'register_student_role_taxonomy');
 
-
-add_image_size('student-small', 300, 300, true);
-add_image_size('student-large', 600, 600, true);
+add_action('after_setup_theme', function() {
+  add_image_size('student-small', 250, 400, true); 
+  add_image_size('student-large', 500, 800, true); 
+});
 
 add_filter('image_size_names_choose', function($sizes) {
   return array_merge($sizes, [
@@ -98,3 +114,13 @@ function sort_students_by_custom_field( $query ) {
   }
 }
 add_action( 'pre_get_posts', 'sort_students_by_custom_field' );
+
+add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context) {
+  if (!empty($editor_context->post) && $editor_context->post->post_type === 'student') {
+    return [
+      'core/image',
+      'core/paragraph',
+    ];
+  }
+  return $allowed_blocks;
+}, 10, 2);
