@@ -1,6 +1,29 @@
 <?php
 require get_theme_file_path() . '/inc/post-types-taxonomies.php';
 
+function school_enqueues()
+{
+  wp_enqueue_style(
+        'school-normalize',
+        get_stylesheet_uri('/assets/styles/normalize.css'),
+        array(),
+        wp_get_theme()->get('Version'),
+        'all'
+  );
+
+  wp_enqueue_style(
+        'school-style',
+        get_stylesheet_uri(),
+        array(),
+        wp_get_theme()->get('Version'),
+        'all'
+  );
+}
+
+add_action('wp_enqueue_scripts', 'school_enqueues');
+
+
+
 wp_register_style('animate-on-scroll-style', 'https://unpkg.com/aos@2.3.1/dist/aos.css');
 
 wp_enqueue_style('animate-on-scroll-style');
