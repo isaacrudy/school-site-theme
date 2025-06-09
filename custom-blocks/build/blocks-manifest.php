@@ -1,6 +1,19 @@
 <?php
 // This file is generated. Do not modify it manually.
 return array(
+	'student-list' => array(
+		'apiVersion' => 2,
+		'name' => 'mytheme/student-list',
+		'title' => 'Student List',
+		'category' => 'widgets',
+		'icon' => 'groups',
+		'description' => 'Displays a list of students with featured images and roles.',
+		'supports' => array(
+			'html' => false
+		),
+		'editorScript' => 'file:./index.js',
+		'render' => 'file:./render.php'
+	),
 	'text-slider' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
