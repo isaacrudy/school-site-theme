@@ -1,4 +1,5 @@
 <?php
+require get_theme_file_path() . '/inc/post-types-taxonomies.php';
 
 wp_register_style('animate-on-scroll-style', 'https://unpkg.com/aos@2.3.1/dist/aos.css');
 
@@ -97,6 +98,3 @@ function sort_students_by_custom_field( $query ) {
   }
 }
 add_action( 'pre_get_posts', 'sort_students_by_custom_field' );
-
-
-
