@@ -12,11 +12,21 @@
 					"color": "#003c72",
 					"name": "Dark Blue",
 					"slug": "custom-dark-blue"
+				},
+				{
+					"color": "#ffffff",
+					"name": "white",
+					"slug": "custom-white"
+				},
+				{
+					"color": "#000000",
+					"name": "black",
+					"slug": "custom-black"
 				}
 			]
 		},
 		"layout": {
-			"contentSize": "620px",
+			"contentSize": "700px",
 			"wideSize": "1000px"
 		},
 		"spacing": {
@@ -30,11 +40,340 @@
 			]
 		},
 		"typography": {
+			"fluid": true,
 			"fontFamilies": [
 				{
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
 					"name": "System Font",
 					"slug": "system-font"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "normal",
+							"fontWeight": "100",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-100-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "normal",
+							"fontWeight": "200",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-200-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-300-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-500-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-600-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-700-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-800-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-900-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "italic",
+							"fontWeight": "100",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-100-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "italic",
+							"fontWeight": "200",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-200-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "italic",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-300-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-400-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-500-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-600-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-700-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "italic",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-800-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Serif\"",
+							"fontStyle": "italic",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/noto-serif/noto-serif-900-italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Noto Serif\", serif",
+					"name": "Noto Serif",
+					"slug": "noto-serif"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "100",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-100-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "200",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-200-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-300-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-500-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-600-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-700-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-800-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-900-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "100",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-100-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "200",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-200-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-300-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-400-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-500-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-600-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-700-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-800-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Noto Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/noto-sans/noto-sans-900-italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Noto Sans\", sans-serif",
+					"name": "Noto Sans",
+					"slug": "noto-sans"
+				}
+			],
+			"fontSizes": [
+				{
+					"fluid": false,
+					"name": "Small",
+					"size": "1rem",
+					"slug": "fluid-small"
+				},
+				{
+					"fluid": {
+						"max": "1.5rem",
+						"min": "1rem"
+					},
+					"name": "Medium",
+					"size": "1.25rem",
+					"slug": "fluid-medium"
+				},
+				{
+					"fluid": {
+						"max": "2rem",
+						"min": "1.25rem"
+					},
+					"name": "Large",
+					"size": "1.5rem",
+					"slug": "fluid-large"
 				}
 			]
 		},
@@ -42,6 +381,13 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/button": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)",
+					"fontStyle": "normal",
+					"fontWeight": "800"
+				}
+			},
 			"core/separator": {
 				"css": "width: 5rem;"
 			}
@@ -55,13 +401,32 @@
 				"color": {
 					"background": "var(--wp--preset--color--custom-maroon)",
 					"text": "var(--wp--preset--color--white)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--noto-sans)"
+				}
+			},
+			"caption": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--noto-sans)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--noto-sans)"
 				}
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--black)"
+					"text": "var(--wp--preset--color--custom-dark-blue)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--noto-serif)"
 				}
 			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--noto-serif)"
 		}
 	},
 	"templateParts": [

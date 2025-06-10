@@ -13,3 +13,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: school-site-theme
 Tags: 
 */
+
+.wp-block-custom-blocks-text-slider {
+  overflow: hidden;
+}
+
+.wp-block-media-text__content {
+  overflow: hidden;
+}
+
+.wp-block-column {
+  overflow: hidden;
+}
