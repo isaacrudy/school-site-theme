@@ -1,4 +1,9 @@
 <?php
+function add_favicon() {
+  echo "<link rel='icon' type='image/x-icon' href='" . get_theme_file_uri() . "/assets/icons/favicon.ico'>";
+}
+add_action('wp_head', 'add_favicon');
+
 require get_theme_file_path() . '/inc/post-types-taxonomies.php';
 
 function school_enqueues()
